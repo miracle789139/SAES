@@ -1,0 +1,303 @@
+/*鹿芦鹿虏脩霉脢陆*/
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3,h4, h5, h6, form, input,
+select, button, textarea, iframe, table, th, td { margin: 0; padding: 0;border:0 none;}
+div{border:0 none;/*陆芒戮枚clear脰庐潞贸虏禄脛脺掳陇脳脜碌脛脦脢脤芒*/ }
+img { border: 0 none; max-width: 100%}
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 16px; }
+body, input, select, button, textarea { font-size: 14px; font-family: Tahoma, Geneva, sans-serif; }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; color: #363636; line-height: 1.2; }
+a, a:link,a:active,a:hover,a:visited{ text-decoration: none; }
+a:focus { outline: none; }
+.clearfix:after {
+    content:"\200B";
+    display:block;
+    height:0;
+    clear:both;
+}
+.clearfix {*zoom:1;}/*IE/7/6*/
+.more { float: right; }
+.more a { font-weight: normal; font-size: 12px; }
+.fl, .fr{ display: inline; float: left; }
+.fr{ float: right; }
+/* bootstrap鐩稿叧淇敼 */
+table thead tr th,table tbody tr td{
+    text-align: center;
+}
+.panel>.panel-body+.table, .panel>.panel-body+.table-responsive, .panel>.table+.panel-body, .panel>.table-responsive+.panel-body {
+    border-bottom: 1px solid #ddd;
+}
+
+.top{
+    width:100%;
+    background-color: #3386CE;
+    /*鑰佸笀閭ｈ皟璇曠殑锛�2E7A9E*/
+    color:#666;
+}
+.topbar{
+    color:white;
+    width:87.77777777777%;
+    min-width: 1024px;
+    margin:0 auto;
+    height:50px;
+    line-height: 50px;
+    background-color: #126BD3;
+}
+.info,.user,.logout{
+    float:right;
+    margin:0 20px;
+}
+.logo{
+    float:left;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+.logo a {
+    color: #FFFFFF;
+}
+.info{
+    position: relative;]
+height: 50px;
+}
+.info span{
+    position: absolute;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    right:-15px;
+    top:6px;
+    width:20px;
+    height:20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.user a,.user a:link,.logout a,.logout a:link  { color:white;}
+.user a:active,.user a:hover,.logout a:active,.logout a:hover { color:blue;}
+.wrapper{
+    width:87.7777777777777%;
+    min-width: 1024px;
+    margin:0 auto;
+}
+.wrapper:after {
+    content:"\200B";
+    display:block;
+    height:0;
+    clear:both;
+}
+
+#footer {
+    margin: 20px auto;
+    height: 80px;
+    padding-top: 20px;
+    background-color: #DDDDDD;
+}
+
+#footer p {
+    text-align: center;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.mainMenu{
+    width: 100%;
+    height:30px;
+    background-color: rgb(100, 94, 94);
+    line-height: 30px;
+}
+.mainMenu ul li{
+    width: 20%;
+    float:left;
+    text-align: center;
+    border-right: 1px solid #969090;
+}
+.mainMenu ul li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.mainMenu_audit{
+    width: 100%;
+    height:30px;
+    background-color: rgb(100, 94, 94);
+    line-height: 30px;
+}
+.mainMenu_audit ul li{
+    width: 16.66%;
+    float:left;
+    text-align: center;
+    border-right: 1px solid #969090;
+}
+.mainMenu_audit ul li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.mainPanel{
+    color:#333;
+    margin:20px auto;
+}
+.content{
+    background-color: #ddd;
+}
+.tal{
+    text-align: left;
+}
+
+.allSelect,.xuHao{
+    width: 5%;
+}
+table tbody tr td a,table tbody tr td a:link{ color:#333;}
+table tbody tr td a:visited{color:#9B9090;}
+table tbody tr td a:hover{color:#428bca;}
+table tbody tr td a:active{ color:#9B9090}
+.panel{min-height: 500px;}
+.page{
+    width:190px;
+    margin:5px auto;
+}
+
+#callBackPager{
+    text-align: center;
+}
+#home,#notify,#schedule,#askreport,#file{color: white}
+.panel-body,.panel-heading{padding:0;}
+.panel-body span,.panel-body button{display: inline-block; margin:15px;}
+.panel-heading span,.panel-body button{display: inline-block;margin:10px 15px;}
+
+/*notify*/
+.ndetails{
+    width:80%;
+    margin: auto;
+}
+
+.col-xs-1 .btn{
+    margin-right: 4px;
+    padding: 5px 8px;
+}
+
+/*schedule*/
+/*鏃ュ巻*/
+#calendar {
+    max-width: 100%;
+    margin:0px auto 10px auto;
+    background-color: white;
+    padding: 15px!important;
+}
+
+/*鐩綍鏍戝舰浣嶇疆璋冩暣*/
+.pos{
+    position: absolute;
+    right: 20%;
+    margin-top: -20px;
+}
+
+.tDemo{
+    margin-top: -20px;
+}
+
+/*download*/
+
+/*鍏叡灞炴�э紝鍐欏湪鏈�鍚庯紝闃叉琚覆鏀�*/
+/*杈撳叆浜哄憳锛屾椂闂磋皟妗�*/
+input{border:1px solid black;background-color:transparent;}
+textarea{border:1px solid black;background-color:transparent;}
+
+.fancy {
+    width: 450px;
+    height: auto
+}
+
+.fancy h3 {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 14px
+}
+
+.fancy form {
+    padding: 10px
+}
+
+.fancy p {
+    height: 35px;
+    line-height: 28px;
+    padding: 4px;
+    color: #999
+}
+
+.fancy .input {
+    height: 26px;
+    line-height: 20px;
+    padding: 2px;
+    border: 1px solid #d3d3d3;
+    width: 100px
+}
+
+.fancy select {
+    border: 1px solid #d3d3d3;
+    height: 26px;
+}
+
+.btn {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 5px 12px;
+    cursor: pointer
+}
+
+.btn_ok {
+    background: #360;
+    border: 1px solid #390;
+    color: #fff
+}
+
+.btn_cancel {
+    background: #f0f0f0;
+    border: 1px solid #d3d3d3;
+    color: #666
+}
+
+.btn_del {
+    background: #f90;
+    border: 1px solid #f80;
+    color: #fff
+}
+
+.sub_btn {
+    height: 32px;
+    line-height: 32px;
+    padding-top: 6px;
+    border-top: 1px solid #f0f0f0;
+    text-align: right;
+    position: relative
+}
+
+.sub_btn .del {
+    position: absolute;
+    left: 2px
+}
+
+.panel-heading #tips {
+    margin-top: -8px;
+}
+
+#fancybox-inner .ui-multiselect {
+    width: 100% !important;
+    height: 34px !important;
+}
+
+#fancybox-wrap{
+    padding: 5px!important;
+}
+
+.list-inline li {
+    margin: 10px 15px;
+}
+
+.list-inline li a {
+    color: white;
+}
+
+#whiteButton{
+    color: #ffffff;
+}

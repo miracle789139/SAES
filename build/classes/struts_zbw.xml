@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+ <package name="zbwPackage" namespace="/" extends="struts-default">
+       <!--  <action name="loginAction" class="edu.usst.action.AuthAction" method="login">
+            <result name="SUCCESS">/jspPage/home.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action> -->
+        <!--  为了命名不冲突建议加上前缀，例如自己的名字拼音 -->
+         <action name="appmana-*" class="edu.usst.action.ApplicationManageAction" method="{1}">
+            <result name="{1}">/jspPage/appmana-{1}.jsp</result>
+        </action>
+        
+        <action name="appmanaAddApply" class="edu.usst.action.ApplicationManageAction" method="addApply">
+            <result name="SUCCESS">/jspPage/appmana-success.jsp</result>
+        </action>
+        
+        
+        <action name="appmanaCheck" class="edu.usst.action.ApplicationManageAction" method="appmanaCheck">
+            <result name="SUCCESS">/jspPage/appmana-checkwai.jsp</result>
+        </action>
+        
+        
+        <action name="appmanaPrint" class="edu.usst.action.ApplicationManageAction" method="appmanaCheck">
+            <result name="SUCCESS">/jspPage/print_test.jsp</result>
+        </action>
+        
+        
+        <action name="applyInfoDele" class="edu.usst.action.ApplicationManageAction" method="applyInfoDele">
+            <result name="SUCCESS">/jspPage/appmana-success.jsp</result>
+        </action>
+        <action name="editPro" class="edu.usst.action.ApplicationManageAction" method="editPro">
+            <result name="yuanwai">/jspPage/appmana-editwai.jsp</result>
+            <result name="yuannei">/jspPage/appmana-edit.jsp</result>
+        </action>
+        <action name="appmanaedit" class="edu.usst.action.ApplicationManageAction" method="edit">
+            <result name="edit">/jspPage/appmana-success.jsp</result>
+         </action>	 
+    </package>
+</struts>

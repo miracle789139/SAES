@@ -1,0 +1,189 @@
+/*¹«¹²ÑùÊ½*/
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3,h4, h5, h6, form, input, 
+select, button, textarea, iframe, table, th, td { margin: 0; padding: 0;border:0 none;} 
+div{border:0 none;/*½â¾öclearÖ®ºó²»ÄÜ°¤×ÅµÄÎÊÌâ*/ }
+img { border: 0 none; max-width: 100%} 
+ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 16px; }  
+body, input, select, button, textarea { font-size: 14px; font-family: Tahoma, Geneva, sans-serif; }
+button { cursor: pointer; }
+i, em, cite { font-style: normal; }
+body { background: #fff; color: #363636; line-height: 1.2; } 
+a, a:link,a:active,a:hover,a:visited{ text-decoration: none; }
+a:focus { outline: none; } 
+.clearfix:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.clearfix {*zoom:1;}/*IE/7/6*/
+.more { float: right; }         
+.more a { font-weight: normal; font-size: 12px; } 
+.fl, .fr{ display: inline; float: left; } 
+.fr{ float: right; } 
+/* bootstrap相关修改 */
+table thead tr th,table tbody tr td{
+	text-align: center;
+}
+.panel>.panel-body+.table, .panel>.panel-body+.table-responsive, .panel>.table+.panel-body, .panel>.table-responsive+.panel-body {
+  border-bottom: 1px solid #ddd;
+}
+/* commen start*/
+body{
+	/*font: 12px/150% Arial,Verdana,"\5b8b\4f53";*/
+	color:white;
+    /*background: #fff;*/
+} 
+.top{
+	width:100%;
+	background-color: black;
+	color:#666;
+}
+.topbar{
+	color:white;
+	width:87.77777777777%;
+	min-width: 1024px;
+	margin:0 auto;
+	height:50px;
+	line-height: 50px;
+	background-color: black;
+}
+.info,.user,.logout{
+	float:right;
+	margin:0 20px;
+}
+.logo{
+	float:left;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+}
+.info{
+	position: relative;]
+	height: 50px;
+}
+.info span{
+	position: absolute;
+	display: block;
+	line-height: 20px;
+	text-align: center;
+	right:-15px;
+	top:6px;
+	width:20px;
+	height:20px;
+	background-color: red;
+	border-radius: 50%;
+}
+.user a,.user a:link,.logout a,.logout a:link  { color:white;} 
+.user a:active,.user a:hover,.logout a:active,.logout a:hover { color:blue;}
+.wrapper{
+	width:87.7777777777777%;
+	min-width: 1024px;
+	margin:0 auto;
+}
+.wrapper:after { 
+    content:"\200B"; 
+    display:block; 
+    height:0; 
+    clear:both; 
+} 
+.mainMenu{
+	width: 100%;
+	height:30px;
+	background-color: rgb(100, 94, 94);
+ 	line-height: 30px;
+}
+.mainMenu ul li{
+	width: 25%;
+	float:left;
+	text-align: center;
+	border-right: 1px solid #969090;
+}
+.mainMenu ul li:hover{
+	background-color: red;
+	cursor: pointer;
+}
+.mainMenu1{
+	width: 100%;
+	height:30px;
+	background-color: rgb(100, 94, 94);
+ 	line-height: 30px;
+}
+.mainMenu1 ul li{
+	width: 20%;
+	float:left;
+	text-align: center;
+	border-right: 1px solid #969090;
+}
+.mainMenu1 ul li:hover{
+	background-color: red;
+	cursor: pointer;
+}
+.mainPanel{
+	color:#333;
+	margin:20px auto;
+}
+.content{	
+	background-color: #ddd;
+}
+.tal{
+	text-align: left;
+}
+table tbody tr td a,table tbody tr td a:link{ color:#333;}
+table tbody tr td a:visited{color:#9B9090;}
+table tbody tr td a:hover{color:#428bca;}
+table tbody tr td a:active{ color:#9B9090}
+.panel{min-height: 500px;}
+.page{
+	width:190px;
+	margin:5px auto;
+}
+.pagination a{
+	font-family:"Geneva";
+}
+.pagination>li>a {
+	color:#fff;
+	padding:0px;
+	background-color: #5bc0de;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 500;	
+}
+.pagination>li:nth-child(3)>a{
+	width:60px;
+	background-color: #fff;
+	color:#333;
+	border:none;
+	padding:0px;	
+}
+.pagination>li:nth-child(3)>a{}
+.pagination>li:nth-child(3)>a>input{
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.pagination li a img{width: 100%}
+#tongzhi{background-color: red}
+.gongzuo,.shenqing,.download{display:none;}
+#shishi{background-color: red}
+.yilan,.lixiang,.zhongjian,.jiexiang{display:none;}
+#doing{background-color: #999}
+.result{display:none;}
+.panel-body,.panel-heading{padding:0;}
+.panel-body span,.panel-body button{display: inline-block; margin:15px;}
+.panel-heading span,.panel-body button{display: inline-block;margin:10px 15px;}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <package name="ljPackage" namespace="/" extends="struts-default">
+
+        <!--通知公告-->
+        <action name="notify" class="edu.usst.action.NotifyAction" method="notifyView">
+            <result name="SUCCESS">/jspPage/notify.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="notifyEvent" class="edu.usst.action.NotifyAction" method="notifyEvent">
+            <result name="SUCCESS">/jspPage/notify_form.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="notifyGetList" class="edu.usst.action.NotifyAction" method="getListByPage"/>
+        <action name="notifyDo" class="edu.usst.action.NotifyAction" method="notifyDo"/>
+        <action name="notifyOperateById" class="edu.usst.action.NotifyAction"  method="operateNotifyById"/>
+        <action name="notifyDeleteItemByID" class="edu.usst.action.NotifyAction" method="deleteItemByID"/>
+
+        <!--工作安排.都是json请求-->
+        <action name="schedule" class="edu.usst.action.ScheduleAction" method="schedule">
+            <result name="SUCCESS">/jspPage/schedule.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="scheduleEvent" class="edu.usst.action.ScheduleAction" method="scheduleEvent">
+            <result name="SUCCESS">/jspPage/schedule_event.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="scheduleGetList" class="edu.usst.action.ScheduleAction" method="getList"/>
+        <action name="scheduleDo" class="edu.usst.action.ScheduleAction" method="scheduleDo"/>
+        <!--TODO 老赵以后估计会叫再做，集合和个人的分配-->
+        <!--     <action name="schedule_create_person" class="edu.usst.action.NotifyAction" method="schedule_create_person">
+                 <result name="SUCCESS">/jspPage/schedule_create_person.jsp</result>
+                 <result name="FAIL">/jspPage/404.jsp</result>
+             </action>
+             <action name="schedule_create_team" class="edu.usst.action.NotifyAction" method="schedule_create_team">
+                 <result name="SUCCESS">/jspPage/schedule_create_team.jsp</result>
+                 <result name="FAIL">/jspPage/404.jsp</result>
+             </action>-->
+
+        <!--申请汇报-->
+        <action name="askreport" class="edu.usst.action.AskreportAction" method="askreport">
+            <result name="SUCCESS">/jspPage/askreport.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="askreportEvent" class="edu.usst.action.AskreportAction" method="askreportEvent">
+            <result name="SUCCESS">/jspPage/askreport_form.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="askreportGetList" class="edu.usst.action.AskreportAction" method="getListByPage"/>
+        <action name="askreportDo" class="edu.usst.action.AskreportAction" method="askreportDo"/>
+        <action name="askreportOperateById" class="edu.usst.action.AskreportAction"  method="operateById"/>
+        <action name="askreportDeleteItemByID" class="edu.usst.action.AskreportAction" method="deleteItemByID"/>
+
+        <!--下载专区-->
+        <action name="fileView" class="edu.usst.action.FileAction" method="fileView">
+            <result name="SUCCESS">/jspPage/file.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="fileEvent" class="edu.usst.action.FileAction" method="fileEvent">
+            <result name="SUCCESS">/jspPage/file_form.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+        <action name="fileGetList" class="edu.usst.action.FileAction" method="getListByPage"/>
+        <action name="fileDo" class="edu.usst.action.FileAction" method="fileDo"/>
+        <action name="fileAddItem" class="edu.usst.action.FileAction" method="addItem"/>
+        <action name="fileOperateById" class="edu.usst.action.FileAction"  method="operateById"/>
+        <action name="fileDeleteItemByID" class="edu.usst.action.FileAction" method="deleteItemByID"/>
+
+        <!--test-->
+        <action name="download" class="edu.usst.action.NotifyAction" method="download">
+            <result name="SUCCESS">/test/index.jsp</result>
+        </action>
+
+        <action name="notify1" class="edu.usst.action.NotifyAction" method="getListBySendID">
+            <result name="SUCCESS">/jspPage/notify.jsp</result>
+            <result name="FAIL">/jspPage/404.jsp</result>
+        </action>
+    </package>
+</struts>

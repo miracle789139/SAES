@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="wkPackage" namespace="/" extends="struts-default">
+
+		<!-- 项目一览 -->
+		<action name="pro_manage" class="edu.usst.action.ProManageAction"
+			method="manage">
+			<result name="SUCCESS">/jspPage/pro_manage.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+			 <result name="MAIN">/jspPage/geren-main.jsp</result>
+		</action>
+		<action name="pro_manage_add" class="edu.usst.action.ProManageAction"
+			method="manage_add">
+			<result name="SUCCESS">/jspPage/pro_manage_add.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_manage_insert" class="edu.usst.action.ProManageAction"
+			method="manage_insert">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_manage_applyinsert" class="edu.usst.action.ProManageAction"
+			method="manage_applyinsert">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_manage_check" class="edu.usst.action.ProManageAction"
+			method="manage_check">
+			<result name="SUCCESS">/jspPage/pro_manage_check.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		
+		<action name="pro_manage_edit" class="edu.usst.action.ProManageAction"
+			method="manage_check">
+			<result name="SUCCESS">/jspPage/pro_manage_edit.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_manage_edit_submit" class="edu.usst.action.ProManageAction"
+			method="pro_manage_edit">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_manage_delete" class="edu.usst.action.ProManageAction"
+			method="pro_manage_delete">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+
+
+		<!-- 项目立项 -->
+		<action name="pro_approval" class="edu.usst.action.ProApprovalAction"
+			method="approval">
+			<result name="SUCCESS">/jspPage/pro_approval.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_approval_check" class="edu.usst.action.ProApprovalAction"
+			method="approval_check">
+			<result name="SUCCESS">/jspPage/pro_approval_check.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_approval_edit" class="edu.usst.action.ProApprovalAction"
+			method="approval_edit">
+			<result name="SUCCESS">/jspPage/pro_approval_edit.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_approval_edit1" class="edu.usst.action.ProApprovalAction"
+			method="approval_edit1">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		
+		<!-- 项目实施 -->
+		<action name="pro_actualize" class="edu.usst.action.ProActualizeAction"
+			method="actualize">
+			<result name="SUCCESS">/jspPage/pro_actualize.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_actualize_edit" class="edu.usst.action.ProActualizeAction"
+			method="actualize_edit">
+			<result name="SUCCESS">/jspPage/pro_actualize_edit.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_midexam_apply" class="edu.usst.action.ProActualizeAction"
+			method="midexam_apply">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		
+		<!-- 项目中检 -->
+		<action name="pro_midexam" class="edu.usst.action.ProMidexamAction"
+			method="midexam">
+			<result name="SUCCESS">/jspPage/pro_midexam.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_midexam_check" class="edu.usst.action.ProMidexamAction"
+			method="midexam_check">
+			<result name="SUCCESS">/jspPage/pro_midexam_check.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_midexam_edit" class="edu.usst.action.ProMidexamAction"
+			method="midexam_edit">
+			<result name="SUCCESS">/jspPage/pro_midexam_edit.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_midexam_edit1" class="edu.usst.action.ProMidexamAction"
+			method="midexam_edit1">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		
+		<!-- 项目结项 -->
+		<action name="pro_enditem" class="edu.usst.action.ProEnditemAction"
+			method="enditem">
+			<result name="SUCCESS">/jspPage/pro_enditem.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_enditem_check" class="edu.usst.action.ProEnditemAction"
+			method="enditem_check">
+			<result name="SUCCESS">/jspPage/pro_enditem_check.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_enditem_edit" class="edu.usst.action.ProEnditemAction"
+			method="enditem_edit">
+			<result name="SUCCESS">/jspPage/pro_enditem_edit.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		<action name="pro_enditem_edit1" class="edu.usst.action.ProEnditemAction"
+			method="enditem_edit1">
+			<result name="SUCCESS">/jspPage/pro_public.jsp</result>
+			<result name="FAIL">/jspPage/grxq.jsp</result>
+		</action>
+		
+		<!-- 项目审核 -->
+		<action name="projectaudit" class="edu.usst.action.ProAuditAction" method="pro_audit">
+		<result name="SUCCESS">/jspPage/project_audit.jsp</result>
+		<result name="FAIL">/jspPage/404.jsp</result>
+		</action>
+		<action name="doneauditGetList" class="edu.usst.action.ProAuditAction" method="getListByPage"/>
+
+	</package>
+</struts>

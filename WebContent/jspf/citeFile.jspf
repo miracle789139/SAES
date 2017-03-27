@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<title>上海市教育科学研究院</title>
+<meta name="viewport"
+	  content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/fancybox.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/jquery.multiselect.css"/>
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/lj_main.css">
+
+<script src="<%=request.getContextPath()%>/js/jquery-1.10.1.min.js"></script>
+<script src='<%=request.getContextPath()%>/js/jquery-ui.js'></script>
+<script src="<%=request.getContextPath()%>/js/jquery.fancybox-1.3.1.pack.js"></script>
+<script src="<%=request.getContextPath()%>/js/jquery.multiselect.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery.form.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/extendPagination.js"></script>
+<script src="<%=request.getContextPath()%>/js/bootstrap-tooltip.js"></script>
+<script src="<%=request.getContextPath()%>/js/bootstrap-popover.js"></script>
+<script src="<%=request.getContextPath()%>/js/lj_main.js"></script>

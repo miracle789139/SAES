@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<title>上海市教育科学研究院</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/css/main_wk.css">
+<script src="<%=request.getContextPath()%>/js/jquery-1.10.1.min.js"></script>
+<script src="<%=request.getContextPath()%>/js/control_wk.js"></script>

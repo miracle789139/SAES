@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <!-- <constant name="struts.objectFactory" value="spring" /> -->
+    <constant name="struts.devMode" value="false"/>
+    <!-- 指定上传文件时临时文件的存放路径 -->
+    <constant name="struts.multipart.saveDir " value="c:/temp"/>
+    <constant name="struts.custom.i18n.resources" value="fileuploadmessage"/>
+    <!-- struts.xml变更时是否自动重新加载 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 限定上传文件最大大小20M, struts2默认maxSize为2M -->
+    <constant name="struts.multipart.maxSize" value="20971520"/>
+     <!--     刘靖相关界面跳转action -->
+    <include file="struts_lj.xml" />
+     <!--     王凯相关界面跳转action -->
+    <include file="struts_wk.xml" />
+     <!--     博文相关界面跳转action -->
+    <include file="struts_zbw.xml" />
+     <!--     张灿相关界面跳转action -->
+     <include file="struts_zc.xml"/>
+    <!--     小红相关界面跳转action -->
+    <include file="struts_hxh.xml" />
+    <!-- package的name属性必需唯一，否则启动tomcat时会报错！
+    package 的namespace属性可以相同，相同时，将两个package下的action合并，遇到相同的那么属性的action时，后面的packeage定义的action将覆盖前面带额package的action
+     -->
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="getloginViewAction" class="edu.usst.action.AuthAction" method="getLoginView">
+            <result name="SUCCESS">/jspPage/login.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+        <action name="loginAction" class="edu.usst.action.AuthAction" method="login">
+            <result name="SUCCESS">/jspPage/home.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+        <action name="getHomeViewAction" class="edu.usst.action.AuthAction" method="getHomeViewAction">
+            <result name="SUCCESS">/jspPage/home.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+        <action name="logoutAction" class="edu.usst.action.AuthAction"  method="logoutAction">
+            <result name="SUCCESS">/jspPage/login.jsp</result>
+        </action>
+        
+        <action name="appmana-*" class="edu.usst.action.ApplicationManageAction" method="{1}">
+            <result name="{1}">/jspPage/appmana-{1}.jsp</result>
+        </action>
+        
+	</package>
+</struts>

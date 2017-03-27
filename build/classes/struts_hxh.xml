@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8" />
+ <package name="hxhPackage" namespace="/" extends="struts-default">
+ 	
+ 	<action name="personInfo" class="edu.usst.action.PersonInforAction"  method="queryperson">
+           <result name="FAIL">/jspPage/grxq.jsp</result>
+            <result name="SUCCESS">/jspPage/grxq.jsp</result>
+            <result name="NOLOGIN">/jspPage/login.jsp</result>
+        </action>
+         <action name="queryperson" class="edu.usst.action.PersonInforAction"  method="queryperson">
+           <result name="FAIL">/jspPage/login.jsp</result>
+           
+            <result type="chain" name="SUCCESS">
+             <param name="actionName">pro_manage</param>
+                <param name="is">1</param>
+            </result>
+        </action>
+        <action name="personInfoUpdateAction" class="edu.usst.action.PersonInfoUpdateAction"  method="personInfoUpdate">
+           <result name="error">/jspPage/grxq.jsp</result>
+            <result name="SUCCESS">/jspPage/grxq.jsp</result>
+            <result name="FAIL">/jspPage/grxq.jsp</result>
+        </action>
+        <action name="personInfoUpdateAction_2" class="edu.usst.action.PersonInfoUpdateAction"  method="personInfoUpdate_2">
+           <result name="error">/jspPage/grxq.jsp#jl</result>
+            <result name="SUCCESS">/jspPage/grxq.jsp#jl</result>
+            <result name="FAIL">/jspPage/grxq.jsp#jl</result>
+        </action>
+		
+        
+         <action name="ModifyImg" class="edu.usst.action.PersonInforAction" method="ModifyImg">
+            <result name="SUCCESS">/jspPage/geren-main.jsp</result>
+            <result name="FAIL">/jspPage/index.jsp</result>
+    	</action>
+    	
+        <action name="keyanInfo" class="edu.usst.action.KeyanInfoAction"  method="keyaninfo">
+           <result name="FAIL">/jspPage/keyaninfo.jsp</result>
+            <result name="SUCCESS">/jspPage/keyaninfo.jsp</result>
+        </action>
+        <action name="magazine" class="edu.usst.action.KeyanInfoAction"  method="magazine">
+           <result name="FAIL">/jspPage/magazine.jsp</result>
+            <result name="SUCCESS">/jspPage/magazine.jsp</result>
+        </action>
+        <action name="keyanInfoadd" class="edu.usst.action.KeyanInfoAction"  method="keyaninfoadd">
+           <result name="FAIL">/jspPage/keyaninfo.jsp</result>
+            <result name="SUCCESS">/jspPage/keyaninfo.jsp</result>
+        </action>
+                <action name="keyanInfoupdate" class="edu.usst.action.KeyanInfoAction"  method="keyanInfoupdate">
+           <result name="FAIL">/jspPage/keyaninfo.jsp</result>
+            <result name="SUCCESS">/jspPage/keyaninfo.jsp</result>
+        </action>
+        <action name="magazineadd" class="edu.usst.action.KeyanInfoAction"  method="magazineadd">
+           <result name="FAIL">/jspPage/magazine.jsp</result>
+            <result name="SUCCESS">/jspPage/magazine.jsp</result>
+        </action>
+        <action name="keyanInfodele" class="edu.usst.action.KeyanInfoAction"  method="keyanInfodele">
+           <result name="FAIL">/jspPage/keyaninfo.jsp</result>
+            <result name="SUCCESS">/jspPage/keyaninfo.jsp</result>
+        </action>
+    </package>
+    <package name="hxhJson" extends="json-default" namespace="/">
+    <action name="querykyxx"  class="edu.usst.action.keyanXinxiAction" method="querykyxx">
+    <result type="json" name="SUCCESS">
+    <param name="root">jarray</param>
+    </result>
+    </action>
+         <action name="querykyxxxq"  class="edu.usst.action.keyanXinxiAction" method="querykyxxxq">
+    <result type="json" name="SUCCESS">
+    <param name="root">jarray</param>
+    </result>
+    </action>
+    </package>
+</struts>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8" />
+ <package name="zcPackage" namespace="/android" extends="json-default">
+       <action name="androidLoginAction" class="edu.usst.action.AndroidLoginAction" method="login">
+            <result type="json">
+                <param name="root">responseJson</param>
+            </result>
+        </action> 
+        <action name="androidNoticeListAction" class="edu.usst.action.AndroidNoticeAction" method="getNoticeList">
+            <result type="json">
+                <param name="root">responseJson</param>
+            </result>
+        </action>
+        <action name="androidNoticeDetailAction" class="edu.usst.action.AndroidNoticeAction" method="getNoticeDetail">
+            <result type="json">
+                <param name="root">responseJson</param>
+            </result>
+        </action>
+        
+        <action name="androidAuditListAction" class="edu.usst.action.AndroidNoticeAction" method="getAuditList">
+            <result type="json">
+                <param name="root">responseJson</param>
+            </result>
+        </action>
+        <action name="androidAuditDetailAction" class="edu.usst.action.AndroidNoticeAction" method="getAuditDetail">
+            <result type="json">
+                <param name="root">responseJson</param>
+            </result>
+        </action>
+    </package>
+    <package  name="managePackage" namespace="/manage" extends="struts-default">
+     <action name="getManageViewAction" class="edu.usst.action.ManageReferAction" method="getManageViewAction">
+            <result name="SUCCESS">/jspPage/manage/managehome.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+    <action name="getUserListAction" class="edu.usst.action.ManageReferAction" method="getUserListAction">
+        </action>
+     <action name="getUnitViewAction" class="edu.usst.action.ManageReferAction" method="getUnitViewAction">
+            <result name="SUCCESS">/jspPage/manage/unitinfo.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+     <action name="getUnitListAction" class="edu.usst.action.ManageReferAction" method="getUnitListAction">
+        </action>
+     <action name="delUserAction" class="edu.usst.action.ManageReferAction" method="delUserAction">
+        </action>
+     <action name="delUnitAction" class="edu.usst.action.ManageReferAction" method="delUnitAction">
+        </action>
+     <action name="updateUserAction" class="edu.usst.action.ManageReferAction" method="updateUserAction">
+     </action>
+     <action name="updateUnitAction" class="edu.usst.action.ManageReferAction" method="updateUnitAction">
+     </action>  
+     <action name="getNotifyViewAction" class="edu.usst.action.ManageReferAction" method="getNotifyViewAction">
+            <result name="SUCCESS">/jspPage/manage/notifyinfo.jsp</result>
+            <result name="FAIL">/jspPage/login.jsp</result>
+        </action>
+     <action name="getNotifyAction" class="edu.usst.action.ManageReferAction" method="getNotifyAction">
+        </action>
+     <action name="delNotifyAction" class="edu.usst.action.ManageReferAction" method="delNotifyAction">
+        </action>
+     <action name="updateNotifyAction" class="edu.usst.action.ManageReferAction" method="updateNotifyAction">
+     </action>
+    </package>
+</struts>
